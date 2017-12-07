@@ -270,6 +270,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.0.1)
       execjs (>= 0.3.0, < 3)
+    validates_email_format_of (1.6.3)
+      i18n
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.5.1)
@@ -311,6 +313,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   turbolinks
   uglifier
+  validates_email_format_of
   web-console (>= 3.3.0)
 
 RUBY VERSION
