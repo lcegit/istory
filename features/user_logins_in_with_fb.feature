@@ -7,4 +7,4 @@ Feature: User logins in with Facebook
     Given I visit the landing page
     And I click "Login with Facebook" button
     Then I should be on the landing page
-    And I should see "You have been signed in successfully"
+    And I should see "Successfully authenticated from Facebook account"
