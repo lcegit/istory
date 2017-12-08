@@ -15,8 +15,4 @@
 .idea
 coverage
 
-<<<<<<< HEAD
 .env
-=======
-.env
->>>>>>> fed41ac... Set up facebook login with unit test and omniAuth
