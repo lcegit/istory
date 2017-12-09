@@ -2,9 +2,13 @@
 <p>An interactive journey</p>
 <p></p>
 
+<%= link_to 'Starship', story_path(1) %>
+<%= link_to 'Wonderland', story_path(2) %>
+<%= link_to 'Far far away', story_path(3) %>
+
 <div class="stories">
   <% @stories.each do |story| %>
-      <h1><%= story.title %></h1>
+      <h1><%= link_to story.title %></h1>
       <h4><%= story.intro %></h4>
       <h4><%= link_to 'Take me to the story', story_path(story) %></h4>
   <% end %>

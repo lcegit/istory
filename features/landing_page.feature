@@ -10,5 +10,7 @@ Feature: iStory landing page
     And I should see "Login" button
     And I should see "Sign up" button
     And I should see "Starship" element
+    And I should see "Wonderland" element
+    And I should see "Far far away" element
     And I should see "Contact"
     And I should see "About"
