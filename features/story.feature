@@ -19,7 +19,8 @@ Feature: Story
       | Run                   | Right                 | The monster got stuck and you got away. The end           |
 
   Scenario: User can choose a story to read
-    When I visit the landing page
+    Given I am logged in as random user
+    And I visit the landing page
     And I click "Starship"
     Then I visit the "Starship" story page
 
