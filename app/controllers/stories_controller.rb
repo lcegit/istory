@@ -4,6 +4,7 @@ class StoriesController < ApplicationController
   end
 
   def show
+    @stories = Story.all
     @story = Story.find(params[:id])
     @first_chapter = @story.chapters.first
   end
