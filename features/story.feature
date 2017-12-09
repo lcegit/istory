@@ -21,7 +21,8 @@ Feature: Story
   Scenario: User can choose a story to read
     Given I am logged in as random user
     And I visit the landing page
-    And I click "Starship"
+    And show me the page
+    And I click "Take me to the story"
     Then I visit the "Starship" story page
 
   Scenario: User reads first part of a story

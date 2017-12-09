@@ -9,6 +9,6 @@ Feature: iStory landing page
     And I should see "An interactive journey"
     And I should see "Login" button
     And I should see "Sign up" button
-    And I should see "Tale" element
+    And I should see "Starship" element
     And I should see "Contact"
     And I should see "About"
