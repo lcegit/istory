@@ -9,10 +9,11 @@ chapters = [{"parent_chapter"=>"", "title"=>"The story begins", "content"=>"Ther
 stories = [{"title"=>"Starship", "author"=>"Mariza & Alfred", "intro"=>"Once upon a time, in a far away galaxy. There was a young team on the Discovery Starship"}]
 
 stories.each do |hash|
-  @story = Story.create(hash)
+  Story.create(hash)
 end
 
 chapters.each do |hash|
- parent = Chapter.find_by(title: hash[:parent_chapter])
- Chapter.create(hash.merge!(story: @story, parent_chapter: parent).except!('parent_chapter'))
+ parent = Chapter.find_by(title: hash["parent_chapter"])
+ story = Story.find_by(title: "Starship")
+ Chapter.create(hash.merge!(story: story, parent_chapter: parent).except!("parent_chapter"))
 end
