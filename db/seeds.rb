@@ -14,8 +14,5 @@ end
 
 chapters.each do |hash|
  parent = Chapter.find_by(title: hash[:parent_chapter])
- Chapter.create(
-                   hash.merge!(story: @story,
-                               parent_chapter: parent)
-                       .except!('parent_chapter'))
+ Chapter.create(hash.merge!(story: @story, parent_chapter: parent).except!('parent_chapter'))
 end
