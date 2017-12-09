@@ -2,7 +2,7 @@ Feature: User logins in with Facebook
   As a user
   In order to make it easier to login
   I would like to login in with facebook
-  
+
   Background:
     Given the following story exists
       | title    | author          | intro                                                                                    |
